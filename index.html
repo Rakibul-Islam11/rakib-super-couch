@@ -12,16 +12,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
         integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            @keyframes marquee {
+                0% {
+                    transform: translateX(100%);
+                }
+        
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        
+            .marquee {
+                display: flex;
+                animation: marquee 10s linear infinite;
+                animation-timing-function: linear;
+            }
+        </style>
 </head>
 <body>
-    <main>
+    <main class="main_cus">
         <!--small nav start-->
-        <nav class="mini_nav_cus use_font w-11/12 flex justify-between m-auto  bg-white rounded-sm items-center px-4 md:px-5 text-blue-700 border-b-2 border-blue-300">
+        <nav class="mini_nav_cus use_font w-11/12 flex justify-between m-auto  bg-white rounded-sm items-center px-4 md:px-5 text-blue-700 border-b-2 border-blue-300 shadow-xl">
             <a class="text-sm md:text-lg" href="tel:01736600480">helpline: 01736600480</a>
             <a class="text-xl md:text-3xl" href=""><i class="fa-brands fa-square-facebook"></i></a>
         </nav>
         <!--small nav end-->
-        <nav class="w-11/12 bg-white h-12 flex justify-between items-center m-auto rounded-sm px-3 md:px-5">
+        <nav class="w-11/12 bg-white h-20 flex justify-between items-center m-auto rounded-sm px-3 md:px-5 shadow-xl">
             <div>
                 <a href=""><img class="w-32 " src="public/image/brandlogo.png" alt=""></a>
             </div>
@@ -52,7 +69,7 @@
             <!--hamburger menu icon end-->
         </nav>
         <!--hamburger menu item start-->
-        <div class="drawer">
+        <div class="drawer z-50">
             <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         
             <div class="drawer-side">
@@ -68,6 +85,80 @@
             </div>
         </div>
         <!--hamburger menu item end-->
+        <!--hero section start-->
+        <section class="hero_sec_main ">
+            <div class="hero_inner ">
+                <div class="select_location flex flex-col gap-4 justify-center items-start py-5 px-3">
+                    <div class="frmTo  flex flex-col md:flex-row gap-3 w-full">
+                        <div class="select_cus_one w-full ">
+                            <label for="options" class="block text-sm  mb-2 text-black font-bold">LEAVING FROM</label>
+                            <select id="options"
+                                class=" sd block w-full py-1.5 bg-white px-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-black">
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                                <option value="option4">Option 4</option>
+                                <option value="option5">Option 5</option>
+                                <option value="option6">Option 6</option>
+                                <option value="option7">Option 7</option>
+                                <option value="option8">Option 8</option>
+                                <option value="option9">Option 9</option>
+                                <option value="option10">Option 10</option>
+                            </select>
+                        </div>
+                        <div class="select_cus_two w-full">
+                            <label for="options" class="block text-sm mb-2 text-black font-bold">DEPARTING DATE</label>
+                            <select id="options"
+                                class="sd block w-full py-1.5 bg-white px-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-black">
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                                <option value="option4">Option 4</option>
+                                <option value="option5">Option 5</option>
+                                <option value="option6">Option 6</option>
+                                <option value="option7">Option 7</option>
+                                <option value="option8">Option 8</option>
+                                <option value="option9">Option 9</option>
+                                <option value="option10">Option 10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class=" w-full md:w-2/4">
+                        <label for="options" class="block text-sm  mb-2 text-black font-bold">GOING TO</label>
+                        <select id="options"
+                            class=" sd block w-full py-1.5 bg-white px-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-black">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                            <option value="option5">Option 5</option>
+                            <option value="option6">Option 6</option>
+                            <option value="option7">Option 7</option>
+                            <option value="option8">Option 8</option>
+                            <option value="option9">Option 9</option>
+                            <option value="option10">Option 10</option>
+                        </select>
+                    </div>
+                    <button class="main_src_btn bg-green-400 text-black px-20 py-2 font-bold m-auto ">Search</button>
+                </div>
+            </div>
+        </section>
+        <!--hero section end-->
+        <!--main office section start-->
+        <section class=" w-4/5 bg-white m-auto">
+            <div class="pt-40 md:pt-32">
+                <h1 class="text-center text-xl md:text-4xl">OUR FAST SAFE AND COMPATIBLE FLEETS</h1>
+                <marquee behavior="" direction="left" class="">
+                    <div class="w-full md:w-4/6 flex flex-row justify-center items-center gap-10 h-10 mt-5">
+                        <img class="w-40 h-15" src="public/image/berna.jpg" alt="">
+                        <img class="w-24 h-10" src="public/image/images.png" alt="">
+                        <img class="w-40 h-10" src="public/image/imagfive.png" alt="">
+                        <img class="w-32" src="public/image/imgtwo.jpeg" alt="">
+
+                    </div>
+                </marquee>
+            </div>
+        </section>
     </main>
 
 

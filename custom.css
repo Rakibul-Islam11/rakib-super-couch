@@ -12,6 +12,15 @@
     margin: 0;
     padding: 0;
 }
+.main_cus {
+    width: 100%;
+    height: fit-content;
+    background: url(public/image/mainBG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
 .main_menu_item_cus a {
     outline: 2px solid #003ae9;
         /* 2 পিক্সেল পুরু লাল আউটলাইন */
@@ -37,4 +46,37 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+/* hero section start */
+
+.hero_inner {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    background: url(public/image/heroImg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.3), 4px 0 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    
+    
+}
+
+.select_location {
+    width: 80%;
+    height: fit-content;
+    background: url(public/image/selctionImag.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 330px;
+    left: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.main_src_btn, .sd {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
 }
