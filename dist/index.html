@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
         integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <style>
             @keyframes marquee {
                 0% {
@@ -27,8 +28,8 @@
                 animation-timing-function: linear;
             }
         </style>
-  <script type="module" crossorigin src="/assets/index-lepvGk7h.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-I0TOwEPg.css">
+  <script type="module" crossorigin src="/assets/index-2q3y5KZu.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BilWmkXM.css">
 </head>
 <body>
     <main class="main_cus">
@@ -88,7 +89,7 @@
         <!--hero section start-->
         <section class="hero_sec_main ">
             <div class="hero_inner w-11/12 md:w-4/5">
-                <div class="select_location flex flex-col gap-4 justify-center items-start py-5 px-3">
+                <div class="select_location flex flex-col gap-4 justify-center items-start py-5 px-3 top-[274px] md:top-[330px]">
                     <div class="frmTo  flex flex-col md:flex-row gap-3 w-full">
                         <div class="select_cus_one w-full ">
                             <label for="options" class="block text-sm  mb-2 text-black font-bold">LEAVING FROM</label>
@@ -106,10 +107,14 @@
                                 <option value="option10">Option 10</option>
                             </select>
                         </div>
-                        <div class="select_cus_two w-full">
+                        <div class="hidden md:block  select_cus_two w-full">
                             <label for="options" class="block text-sm mb-2 text-black font-bold">DEPARTING DATE</label>
+                            <input class="sd block w-full py-1.5 bg-white px-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-black" type="text" id="datePicker" placeholder="Choose the date">
+                        </div>
+                        <div class=" block md:hidden select_cus_one w-full ">
+                            <label for="options" class="block text-sm  mb-2 text-black font-bold">LEAVING FROM</label>
                             <select id="options"
-                                class="sd block w-full py-1.5 bg-white px-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-black">
+                                class=" sd block w-full py-1.5 bg-white px-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-black">
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
                                 <option value="option3">Option 3</option>
@@ -124,9 +129,9 @@
                         </div>
                     </div>
                     <div class=" w-full md:w-2/4">
-                        <label for="options" class="block text-sm  mb-2 text-black font-bold">GOING TO</label>
+                        <label for="options" class=" hidden md:block  text-sm  mb-2 text-black font-bold">GOING TO</label>
                         <select id="options"
-                            class=" sd block w-full py-1.5 bg-white px-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-black">
+                            class=" hidden md:block sd  w-full py-1.5 bg-white px-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-black">
                             <option value="option1">Option 1</option>
                             <option value="option2">Option 2</option>
                             <option value="option3">Option 3</option>
@@ -138,15 +143,21 @@
                             <option value="option9">Option 9</option>
                             <option value="option10">Option 10</option>
                         </select>
+                        <div class="select_cus_two w-full d-block md:hidden">
+                            <label for="options" class="block text-sm mb-2 text-black font-bold">DEPARTING DATE</label>
+                            <input
+                                class="sd block w-full py-1.5 bg-white px-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-black"
+                                type="text" id="datePicker" placeholder="Choose the date">
+                        </div>
                     </div>
-                    <button class="main_src_btn bg-green-400 text-black px-20 py-2 font-bold m-auto ">Search</button>
+                    <button class="main_src_btn bg-green-400 text-black px-20 py-1 font-bold m-auto ">Search</button>
                 </div>
             </div>
         </section>
         <!--hero section end-->
         <!--main office section start-->
         <section class=" w-11/12 md:w-4/5 bg-white m-auto">
-            <div class="pt-40 md:pt-32">
+            <div class="pt-32 md:pt-32">
                 <h1 class="text-center text-xl md:text-4xl">OUR FAST SAFE AND COMPATIBLE FLEETS</h1>
                 <marquee behavior="" direction="left" class="">
                     <div class="w-full md:w-4/6 flex flex-row justify-center items-center gap-10 h-10 mt-5">
@@ -161,6 +172,6 @@
         </section>
     </main>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>
 </html>
