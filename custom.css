@@ -25,3 +25,16 @@
         gap: 25px;
     }
 }
+.main_menu_item_cus_ham a {
+    outline: 2px solid #003ae9;
+        /* 2 পিক্সেল পুরু লাল আউটলাইন */
+        outline-offset: 2px;
+        background-color: #003ae9;
+        color: white;
+        
+}
+.main_menu_item_cus_ham {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
